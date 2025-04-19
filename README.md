@@ -19,7 +19,7 @@ Follow these steps to get the project up and running locally using `venv` and `p
 Download or clone this repository to your local machine:
 
 ```bash
-git https://github.com/hanifsajid/zipcode-to-state.git
+git clone https://github.com/hanifsajid/zipcode-to-state.git
 cd zipcode-to-state
 ```
 
@@ -45,7 +45,7 @@ python main.py  --country  --input_file  --output_file   --zipcode_col  --state_
 For example: 
 
 ```bash
-python main.py US Data/dfZip.csv Data/outputZip.csv zipcode state_code state
+python main.py --country US --input_file Data/dfZip.csv --output_file Data/outputZip.csv --zipcode_col zipcode --state_code_col state_code --state_col state
 ```
 
 For more advanced usage, see the script’s CLI options using:
